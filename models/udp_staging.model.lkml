@@ -1,7 +1,9 @@
-connection: "bq-looker-marketplace"
+# connection: "bq-looker-marketplace"
 
 # include all the views
 include: "/views/**/*.view.lkml"
+
+include: "//udp_dev/models/udp_dev.model.lkml"
 
 datagroup: udp_staging_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
