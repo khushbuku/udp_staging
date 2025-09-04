@@ -1,4 +1,4 @@
 remote_dependency: udp_dev {
   url: "https://github.com/khushbuku/udp_dev"
-  ref: "bcfe7b9938f6b3ce0474a09e1cb4d24ea3aa12f7"
+  ref: "f97b942c50553c02a31b5bfe167868f686d37975"
 }
