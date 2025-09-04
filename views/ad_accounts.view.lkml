@@ -34,6 +34,7 @@ view: ad_accounts {
   dimension: business_country_code {
     type: string
     sql: ${TABLE}.BusinessCountryCode ;;
+    map_layer_name: my_neighborhood_layer
   }
   dimension: business_name {
     type: string
@@ -112,14 +113,14 @@ view: ad_accounts {
   # ----- Sets of fields for drilling ------
   set: detail {
     fields: [
-	id,
-	created_time,
-	name,
-	business_name,
-	timezone_name,
-	ad_insights_actions.count,
-	ad_insights.count
-	]
+  id,
+  created_time,
+  name,
+  business_name,
+  timezone_name,
+  ad_insights_actions.count,
+  ad_insights.count
+  ]
   }
 
 }
