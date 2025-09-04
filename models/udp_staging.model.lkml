@@ -10,6 +10,14 @@ datagroup: udp_staging_default_datagroup {
   max_cache_age: "1 hour"
 }
 
+# map_layer: my_neighborhood_layer {
+#   file: "//udp_dev/maps/output.json"
+#   format: topojson
+#   feature_key: "BEL_adm1"
+#   property_key: "HASC_1"
+#   property_label_key: "NAME_1"
+# }
+
 persist_with: udp_staging_default_datagroup
 
 explore: campaigns_info {}
@@ -44,4 +52,5 @@ explore: test_campaigns {}
 
 explore: training_cte {}
 
-# explore: postcodedev {}
+explore: postcodedev {
+}
